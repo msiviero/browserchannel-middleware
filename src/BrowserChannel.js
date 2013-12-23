@@ -262,13 +262,12 @@ BrowserChannel.prototype.handle = function(request, response, next) {
     this.log('Handling new request');
 
     if (request.path === '/channel/test' || request.path === '/channel/bind') {
+        this.determineTransport(request.query.TYPE, request, response);
         this.checkProtocolVersion();
     } else {
         next();
     }
-
-    this.determineTransport(request.query.TYPE, request, response);
-    
+ 
     // handle init phase
     if (request.path === '/channel/test' && request.query.MODE === 'init') {
         this.log('Handling "Check connection" phase');
