@@ -127,7 +127,7 @@ module.exports = Handler;
 ##### Server (server.js)
 
 ```javascript
-browserchannel = require('browserchannel-server');
+browserchannel = require('browserchannel-middleware');
 util = require('util');
 express = require('express');
 Handler = require('./Handler.js');
