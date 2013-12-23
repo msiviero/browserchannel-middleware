@@ -1,0 +1,8 @@
+{
+    "author": "msiviero <m.siviero83@gmail.com>",
+    "name": "browserchannel-server-example",
+    "description": "An browserchannel-server example",
+    "dependencies": {
+        "express": "3.*"
+    }
+}

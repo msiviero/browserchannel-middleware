@@ -1,0 +1,7 @@
+--compilation_level ADVANCED_OPTIMIZATIONS
+--warning_level VERBOSE
+--logging_level INFO
+--summary_detail_level 5
+--create_source_map js/compiled.js.map
+--output_wrapper (function(){%output%})();
+--source_map_format=V3

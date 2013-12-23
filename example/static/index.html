@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Browserchannel playground</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        
+        <div class="form-wrapper">
+            <h1>Broadcast chat</h1>
+            <br>
+            <div id="status" class="status disconnected">Disconnected</div>
+            <input id="input" type="text" style="display: none;"/>
+            <button id="send-btn" style="display: none;">Send</button>
+            <button id="connect-btn" >Connect</button>
+            <button id="disconnect-btn" style="display: none;">Disconnect</button>
+        </div>
+
+        <div class="msg-wrapper-title">Log</div>
+        <div id="log" class="msg-wrapper"></div>
+
+        <script src="js/compiled.js" type="text/javascript"></script>
+    </body>
+</html>

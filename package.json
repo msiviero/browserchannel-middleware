@@ -1,0 +1,9 @@
+{
+    "name": "browserchannel-middleware",
+    "version": "0.0.1",
+    "author": "msiviero <m.siviero83@gmail.com>",
+    "description": "Google closure's browserchannel server implementation",
+    "keywords": ["browserchannel", "express"],
+    "main": "./src/middleware.js",
+    "license": "Apache-2.0"
+}
