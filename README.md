@@ -6,7 +6,7 @@ The protocol provides two virtual channel, **backward** and **forward**.
 
 The client part of the protocol is implemented primarly in google's opensource **[closure library](http://docs.closure-library.googlecode.com/git/closure_goog_net_browserchannel.js.source.html)**.
 
-As the server side implementation used by google is not yet [opensourced](http://books.google.com/books?id=p7uyWPcVGZsC&pg=PA179), **node-channel** is a free implementation written as a express.js middleware.
+As the server side implementation used by google is not yet [opensourced](http://books.google.com/books?id=p7uyWPcVGZsC&pg=PA179), **browserchannel-middleware** is a free implementation written as a express.js middleware.
 
 Please note this must be considered as a **less-than-beta** version. Maybe it can be used in the real world and maybe will bring memory leaks, every kind of bug or *velociraptor attacks*.
 This is the beauty of open source..
@@ -25,7 +25,7 @@ The tests are written with mocha testing tool. If you are interested on improve 
 | Chrome android | xhrstreaming  |
 | Safari IOS     | xhrstreaming  |
 
-Thanks to *ahochhaus* for documenting the *[protocol](https://code.google.com/p/libevent-browserchannel-server/wiki/BrowserChannelProtocol)* and to *josephg* for his coffescript implementation, that gave me some good point to start.
+Thanks to *ahochhaus* for documenting the *[protocol](https://code.google.com/p/libevent-browserchannel-server/wiki/BrowserChannelProtocol)* and to *josephg* for his coffescript implementation, that gave me a good point to start.
 
 ##Example usage
 
@@ -33,7 +33,7 @@ Thanks to *ahochhaus* for documenting the *[protocol](https://code.google.com/p/
 
 ##### Request handler (Handler.js)
 ```javascript
-browserchannel = require('browserchannel-server');
+browserchannel = require('browserchannel-middleware');
 
 /**
  * Browserchannel Handler class

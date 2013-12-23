@@ -1,4 +1,4 @@
-browserchannel = require('browserchannel-server');
+browserchannel = require('browserchannel-middleware');
 
 /**
  * Browserchannel Handler class

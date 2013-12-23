@@ -4,6 +4,6 @@
     "description": "An browserchannel-server example",
     "dependencies": {
         "express": "3.*",
-        "browserchannel-server" : "*"
+        "browserchannel-middleware" : "*"
     }
 }

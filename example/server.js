@@ -1,4 +1,4 @@
-browserchannel = require('browserchannel-server');
+browserchannel = require('browserchannel-middleware');
 util = require('util');
 express = require('express');
 Handler = require('./Handler.js');
